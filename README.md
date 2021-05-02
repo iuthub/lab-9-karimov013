@@ -1,1 +1,3 @@
-Student ID: U1910082 Student Name: Karimov Sardorbek Section Number: 002
+Student ID: U1910082    <br/>
+ Student Name: Karimov Sardorbek   <br/>
+ Section Number: 002    <br/>
