@@ -50,4 +50,31 @@ Route::group(['prefix' => 'admin'], function() {
         'uses' => 'PostController@postAdminUpdate',
         'as' => 'admin.update'
     ]);
+
+    Route::get('delete/{id}', [
+        'uses’ => ’PostController@getAdminDelete',
+        'as’ => ’admin.delete'
+]);
+    Route::get('like/{id}', [
+        'uses' => 'PostController@getLikePost',
+        'as' => 'blog.post.like'
+    ]);
+});
+        'as' => 'admin.create'
+    ]);
+
+    Route::post('create', [
+        'uses' => 'PostController@postAdminCreate',
+        'as' => 'admin.create'
+    ]);
+
+    Route::get('edit/{id}', [
+        'uses' => 'PostController@getAdminEdit',
+        'as' => 'admin.edit'
+    ]);
+
+    Route::post('edit', [
+        'uses' => 'PostController@postAdminUpdate',
+        'as' => 'admin.update'
+    ]);
 });
